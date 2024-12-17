@@ -14,7 +14,8 @@
             "program": "${workspaceFolder}\\src\\test.js",
             "outFiles": [
                 "${workspaceFolder}/**/*.js"
-            ]
+            ],
+            "console": "integratedTerminal" // 使用集成终端
         }
     ]
 }
