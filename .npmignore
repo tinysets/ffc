@@ -1,0 +1,10 @@
+# /.vscode
+# /node_modules
+# /src
+# *.ts
+# *.js.map
+# .gitignore
+
+# tsconfig.json
+# tsconfig.types.json
+# rollup.config.mjs

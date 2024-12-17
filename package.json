@@ -1,0 +1,46 @@
+{
+  "name": "ffc",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "echo test ok! && exit 0",
+    "dev": "tsc -w",
+    "tsc": "tsc",
+    "tsc:types": "tsc -p tsconfig.types.json",
+    "bundle": "rollup -c ./rollup.config.mjs",
+    "build": "npm run tsc && npm run tsc:types && npm run bundle",
+    "clean": "rimraf src/**/*.js src/**/*.js.map dist bin",
+    "b": "npm run build",
+    "c": "npm run clean"
+  },
+  "bin": {
+    "ffc": "./bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/tinysets/ffc",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tinysets/ffc.git"
+  },
+  "keywords": [
+    "ffc"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-node-resolve": "^15.2.1",
+    "@types/node": "^20.5.9",
+    "rimraf": "^3.0.2",
+    "rollup": "^3.20.7",
+    "rollup-plugin-header": "^0.0.2",
+    "typescript": "^5.2.2"
+  }
+}
